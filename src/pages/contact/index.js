@@ -3,10 +3,10 @@ import React from 'react'
 const Contact = () => {
   return <div id="content">
     <header>
-      <p class="name-header"><a href="/">← Prakhar Rai</a></p>
+      <p className="name-header"><a href="/">← Prakhar Rai</a></p>
     </header>
 
-    <h1 class="dateless">Contact</h1>
+    <h1 className="dateless">Contact</h1>
 
     <p>I'm happy to hear from you:</p>
 

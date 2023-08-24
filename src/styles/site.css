@@ -1,27 +1,29 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Roboto&family=Roboto+Mono:wght@100&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Noto+Serif:400,400i,700,700i&display=swap'); 
+@import url('https://fonts.googleapis.com/css2?family=Inter&family=Roboto&family=Roboto+Mono:wght@100&display=swap');
+
 body {  
-    font-size:100%;
-    font:inherit;
+    font-size: 20px;
+    /* font:inherit; */
 }
 
 html { 
     margin: 0; 
     padding: 0; 
     border: 0; 
-    font-size: 100%; 
     font: inherit; 
     vertical-align: baseline;
 }
 
 body { 
-    background-color: #fcfcf7;
+    background-color: #FFF;
 }
 
 div { 
     margin: 0; 
     padding: 0; 
     border: 0; 
-    font-size: 100%; 
+    /* font-size: 100%;  */
     font: inherit; 
     vertical-align: baseline;
 } 
@@ -37,7 +39,7 @@ span {
     margin: 0; 
     padding: 0; 
     border: 0; 
-    font-size: 100%; 
+    /* font-size: 100%;  */
     font: inherit; 
     vertical-align: baseline;
 } 
@@ -46,24 +48,24 @@ p {
     margin: 0; 
     padding: 0; 
     border: 0; 
-    font-size: 100%; 
+    /* font-size: 100%;  */
     font: inherit; 
     vertical-align: baseline;
 } 
 
 p { 
-    font-family: 'Noto Serif', serif; 
+    font-family: 'Inter';
     font-style: normal; 
     font-weight: 400;
 } 
 
 p { 
-    color: #0c0c0c;
+    color: #000;
 } 
 
 p { 
     line-height: 1.5em; 
-    font-size: 1.1em; 
+    /* font-size: 1.1em;  */
     margin-bottom: 1em;
 } 
 
@@ -71,7 +73,7 @@ ul {
     margin: 0; 
     padding: 0; 
     border: 0; 
-    font-size: 100%; 
+    /* font-size: 100%;  */
     font: inherit; 
     vertical-align: baseline;
 } 
@@ -92,7 +94,7 @@ b {
     margin: 0; 
     padding: 0; 
     border: 0; 
-    font-size: 100%; 
+    /* font-size: 100%;  */
     font: inherit; 
     vertical-align: baseline;
 } 
@@ -114,13 +116,14 @@ a {
 
 a { 
     color: #0c0c0c;
+    text-decoration: underline;
 } 
 
 li { 
     margin: 0; 
     padding: 0; 
     border: 0; 
-    font-size: 100%; 
+    /* font-size: 100%;  */
     font: inherit; 
     vertical-align: baseline;
 } 
@@ -137,7 +140,7 @@ li {
 
 li { 
     line-height: 1.5em; 
-    font-size: 1.1em; 
+    /* font-size: 1.1em;  */
     list-style-position: outside; 
     margin-bottom: 1em;
 } 
@@ -147,11 +150,15 @@ span.index-date {
     padding-right: 0.5em;
 } 
 
+u {
+    cursor: pointer;
+}
+
 img { 
     margin: 0; 
     padding: 0; 
     border: 0; 
-    font-size: 100%; 
+    /* font-size: 100%;  */
     font: inherit; 
     vertical-align: baseline;
 } 
@@ -165,7 +172,7 @@ h2 {
     margin: 0; 
     padding: 0; 
     border: 0; 
-    font-size: 100%; 
+    /* font-size: 100%;  */
     font: inherit; 
     vertical-align: baseline;
 } 
@@ -182,16 +189,16 @@ h2 {
 
 h2 { 
     line-height: 1.5em; 
-    font-size: 1.1em; 
+    /* font-size: 1.1em;  */
     margin-top: 1.5em; 
     margin-bottom: 0.5em;
 } 
 
 
 
-@media screen and (max-width: 630px) {
+@media screen and (max-width: 800px) {
     body {
-        font-size: 14px;
+        /* font-size: 14px; */
         margin-top: 60px;
         padding-left: 31px;
         padding-right: 31px;
@@ -199,17 +206,17 @@ h2 {
     }
 }
 
-@media only screen and (min-width: 631px){ 
+@media only screen and (min-width: 800px){ 
     div#content { 
       width: 38em;
     } 
   }
 
 .dateless {
-    font-family: 'Noto Serif';
+    font-family: 'Inter';
     margin-top: 3rem;
     margin-bottom: 1em;
-    font-size: 1.5rem;
+    /* font-size: 1.5rem; */
 }
 
 header a {
@@ -217,7 +224,33 @@ header a {
 }
 
 li.point {
-    font-size: 15px;
+    /* font-size: 15px; */
     color: grey;
 }
 
+#blogs {
+    display: flex;
+    flex-direction: row;
+}
+
+.tinkerer {
+    display: inline-block;
+    transform-origin: right;
+    transition: 1s;
+    color: "red";
+    font-weight: 700;
+}
+
+.cursor {
+    display: inline-block;
+    animation: blink 0.7s infinite;
+}
+
+@keyframes blink {
+    0%, 100% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 1;
+    }
+}
