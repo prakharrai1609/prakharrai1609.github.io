@@ -254,3 +254,32 @@ li.point {
         opacity: 1;
     }
 }
+
+.sub-list {
+    list-style-type: none;
+}
+
+.sub-list span {
+    margin-left: 1rem;
+    font-size: 18px;
+}
+
+.ending {
+    margin-top: 3rem;
+    color: rgb(104, 104, 104);
+}
+
+.backtotop {
+    float: right; 
+}
+
+.about-image {
+    width: 150px;
+    height: 150px;
+    position: relative;
+    margin: auto;
+    float: right;
+    border-radius: 50%;
+    overflow: hidden;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
