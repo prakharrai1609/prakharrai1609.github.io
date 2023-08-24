@@ -1,0 +1,223 @@
+@import url('https://fonts.googleapis.com/css?family=Noto+Serif:400,400i,700,700i&display=swap'); 
+body {  
+    font-size:100%;
+    font:inherit;
+}
+
+html { 
+    margin: 0; 
+    padding: 0; 
+    border: 0; 
+    font-size: 100%; 
+    font: inherit; 
+    vertical-align: baseline;
+}
+
+body { 
+    background-color: #fcfcf7;
+}
+
+div { 
+    margin: 0; 
+    padding: 0; 
+    border: 0; 
+    font-size: 100%; 
+    font: inherit; 
+    vertical-align: baseline;
+} 
+
+div#content { 
+    margin-left: auto; 
+    margin-right: auto; 
+    margin-top: 5em; 
+    margin-bottom: 14em;
+} 
+
+span { 
+    margin: 0; 
+    padding: 0; 
+    border: 0; 
+    font-size: 100%; 
+    font: inherit; 
+    vertical-align: baseline;
+} 
+
+p { 
+    margin: 0; 
+    padding: 0; 
+    border: 0; 
+    font-size: 100%; 
+    font: inherit; 
+    vertical-align: baseline;
+} 
+
+p { 
+    font-family: 'Noto Serif', serif; 
+    font-style: normal; 
+    font-weight: 400;
+} 
+
+p { 
+    color: #0c0c0c;
+} 
+
+p { 
+    line-height: 1.5em; 
+    font-size: 1.1em; 
+    margin-bottom: 1em;
+} 
+
+ul { 
+    margin: 0; 
+    padding: 0; 
+    border: 0; 
+    font-size: 100%; 
+    font: inherit; 
+    vertical-align: baseline;
+} 
+
+ul { 
+    margin-bottom: 1em; 
+    padding-left: 1.4em; 
+    list-style-type: square;
+} 
+
+ul.index { 
+    margin-top: 2em; 
+    list-style: none; 
+    padding-left: 0em;
+} 
+
+b { 
+    margin: 0; 
+    padding: 0; 
+    border: 0; 
+    font-size: 100%; 
+    font: inherit; 
+    vertical-align: baseline;
+} 
+
+b { 
+    font-family: 'Noto Serif', serif; 
+    font-style: normal; 
+    font-weight: 700;
+} 
+
+a { 
+    margin: 0; 
+    padding: 0; 
+    border: 0; 
+    font-size: 100%; 
+    font: inherit; 
+    vertical-align: baseline;
+} 
+
+a { 
+    color: #0c0c0c;
+} 
+
+li { 
+    margin: 0; 
+    padding: 0; 
+    border: 0; 
+    font-size: 100%; 
+    font: inherit; 
+    vertical-align: baseline;
+} 
+
+li { 
+    font-family: 'Noto Serif', serif; 
+    font-style: normal; 
+    font-weight: 400;
+} 
+
+li { 
+    color: #0c0c0c;
+} 
+
+li { 
+    line-height: 1.5em; 
+    font-size: 1.1em; 
+    list-style-position: outside; 
+    margin-bottom: 1em;
+} 
+
+span.index-date { 
+    color: grey; 
+    padding-right: 0.5em;
+} 
+
+img { 
+    margin: 0; 
+    padding: 0; 
+    border: 0; 
+    font-size: 100%; 
+    font: inherit; 
+    vertical-align: baseline;
+} 
+
+img { 
+    margin-bottom: 1em; 
+    width: 100%;
+} 
+
+h2 { 
+    margin: 0; 
+    padding: 0; 
+    border: 0; 
+    font-size: 100%; 
+    font: inherit; 
+    vertical-align: baseline;
+} 
+
+h2 { 
+    font-family: 'Noto Serif', serif; 
+    font-style: normal; 
+    font-weight: 700;
+} 
+
+h2 { 
+    color: #0c0c0c;
+} 
+
+h2 { 
+    line-height: 1.5em; 
+    font-size: 1.1em; 
+    margin-top: 1.5em; 
+    margin-bottom: 0.5em;
+} 
+
+
+
+@media screen and (max-width: 630px) {
+    body {
+        font-size: 14px;
+        margin-top: 60px;
+        padding-left: 31px;
+        padding-right: 31px;
+
+    }
+}
+
+@media only screen and (min-width: 631px){ 
+    div#content { 
+      width: 38em;
+    } 
+  }
+
+.dateless {
+    font-family: 'Noto Serif';
+    margin-top: 3rem;
+    margin-bottom: 1em;
+    font-size: 1.5rem;
+}
+
+header a {
+    color: grey;
+}
+
+li.point {
+    font-size: 15px;
+    color: grey;
+}
+
