@@ -50,7 +50,7 @@ const About = () => {
       </h2>
       <Experience />
       <p className="ending"><em>Many more to come, for now : let's go back.</em></p>
-      <a href="#" className="backtotop"><FontAwesomeIcon color="grey" size="xl" icon={faArrowUpWideShort} /></a>
+      <span onClick={() => window.scrollTo({top: 0, behavior: "smooth"})} className="backtotop"><FontAwesomeIcon color="grey" size="xl" icon={faArrowUpWideShort} /></span>
     </div>
   );
 };
