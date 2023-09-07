@@ -151,6 +151,7 @@ span.index-date {
 } 
 
 u {
+    font-family: 'Roboto';
     cursor: pointer;
 }
 
@@ -287,4 +288,22 @@ li.point {
     border-radius: 50%;
     overflow: hidden;
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+
+
+@media screen and (min-width: 700px) {
+    #twoColumns {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+}
+
+@media screen and (max-width: 701px) {
+    #twoColumns {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
 }

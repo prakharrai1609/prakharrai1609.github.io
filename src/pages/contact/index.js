@@ -1,23 +1,34 @@
+import Image from 'next/image'
 import React from 'react'
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faArrowLeftLong } from "@fortawesome/free-solid-svg-icons";
 
 const Contact = () => {
   return <div id="content">
-    <header>
+    {/* <header>
       <p className="name-header"><a href="/">← Prakhar Rai</a></p>
-    </header>
+    </header> */}
+    <a href="/">
+      <FontAwesomeIcon icon={faArrowLeftLong} />
+    </a>
+    <div id="twoColumns">
+      <div>
+        <h1 className="dateless">Contact</h1>
 
-    <h1 className="dateless">Contact</h1>
+        <p>I'm happy to hear from you:</p>
 
-    <p>I'm happy to hear from you:</p>
+        <ul>
+          <li><a href="mailto:rai.prakhar1609@gmail.com">rai.prakhar1609@gmail.com</a></li>
+          <li><a href="https://twitter.com/prakharrai1609">@twitter</a></li>
+          <li><a href="https://linkedin.com/in/prakharrai1609">@linkedin</a></li>
+        </ul>
 
-    <ul>
-      <li><a href="mailto:rai.prakhar1609@gmail.com">rai.prakhar1609@gmail.com</a></li>
-      <li><a href="https://twitter.com/prakharrai1609">@twitter</a></li>
-      <li><a href="https://linkedin.com/in/prakharrai1609">@linkedin</a></li>
-    </ul>
-
-    <p>I reply to every thoughtful note!</p>
-
+        <p>I reply to every thoughtful note!</p>
+      </div>
+      <div>
+        <Image src="/mail.gif" layout='intrinsic' width={300} height={300} />
+      </div>
+    </div>
   </div>
 }
 

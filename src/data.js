@@ -3,13 +3,13 @@ export const experience = [
     date: "02-2023 - Present",
     companyName: "SWE @ Physics Wallah",
     list: [
-      `I'm working on the <b>end-to-end</b> backend service of nugget-o-verse project where we give student a wholesome study experience, including all parts of the learning cycle.`,
+      `I'm working on the <b>end-to-end</b> backend service of nugget-o-verse where we are building a holistic and personlised learning experience for a student to cater the entire learning cycle.`,
       `Developed and deployed the service, focusing on optimisation for a large user base exceeding <b>10 million users.</b>`
     ]
   },
   {
     date: "09-2022 - 02-2023",
-    companyName: "Software developer @ Interview Kickstart",
+    companyName: "SDE @ Interview Kickstart",
     list: [
       `Developed a history panel within the <b>Global Calendar</b> app to track and log changes made to classes, including user details. Also implemented a <b>comprehensive logger</b> to track all modifications made to instructor's details.`,
       `<b>OpenAI</b>: Integrated and implemented all OpenAI REST APIs from scratch, seamlessly integrating them into the existing codebase. Developed a platform which generated over <b>3000+ articles</b>.`

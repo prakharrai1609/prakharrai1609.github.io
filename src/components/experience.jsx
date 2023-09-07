@@ -6,27 +6,21 @@ import { faMapPin } from "@fortawesome/free-solid-svg-icons";
 const Experience = () => {
   return (
     <ul>
-      {experience.map((e) => {
-        return (
-          <>
-            <li>
-              <span className="index-date">{e.date}</span>
-              <span>|&nbsp;</span>
-              <a href="">{e.companyName}</a>
-            </li>
-            <ul>
-              {
-                e.list.map(li => {
-                  return <li className="sub-list">
-                  <FontAwesomeIcon size="sm" icon={faMapPin} />
-                  <span dangerouslySetInnerHTML={{__html: li}}></span>
-                </li>
-                })
-              }
+      {experience.map((e) => (
+        <li key={e.date}>
+          <span className="index-date">{e.date}</span>
+          <span>|&nbsp;</span>
+          <a href="">{e.companyName}</a>
+          <ul>
+            {e.list.map((li, index) => (
+              <li key={index} className="sub-list">
+                <FontAwesomeIcon size="sm" icon={faMapPin} />
+                <span dangerouslySetInnerHTML={{ __html: li }}></span>
+              </li>
+            ))}
           </ul>
-          </>
-        );
-      })}
+        </li>
+      ))}
     </ul>
   );
 };
