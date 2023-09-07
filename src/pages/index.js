@@ -45,7 +45,7 @@ export default function Home() {
     };
   }, [tinkerer.current]);
 
-  let charIndex = 0, final = 0;
+  let charIndex = 0, final = 0, timeout = 1000;
 
   function highlight(keywords) {
     setTextElement((text) => {
@@ -78,6 +78,7 @@ export default function Home() {
           setTextElement((text) => text + "<br /><br />");
           charIndex = 0;
           final = 1;
+          timeout = 0;
           typeText(texts[1], callback);
         } else {
           // Call the callback function when typing is complete
@@ -85,7 +86,7 @@ export default function Home() {
             callback();
           }
         }
-      }, 1000);
+      }, timeout);
     }
   }
 
