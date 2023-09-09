@@ -35,3 +35,8 @@ export const experience = [
     ]
   }
 ];
+
+export const homePageText = [
+  "I've completed my B.Tech in Computer Science Engineering in 2023.",
+  `I've previously worked with "Cisco" and "Interview Kickstart" as a software development engineer. Currently I'm working with "Physics Wallah" 🦄 where I'm owning the complete backend service in "Team Rancho".`,
+];

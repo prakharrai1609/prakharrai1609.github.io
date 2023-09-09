@@ -3,11 +3,8 @@ import { useRouter } from "next/router";
 import { useEffect, useRef, useState } from "react";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faAddressBook, faUser, faBookJournalWhills } from '@fortawesome/free-solid-svg-icons'
-
-const texts = [
-  "I've completed my B.Tech in Computer Science Engineering in 2023.",
-  `I've previously worked with "Cisco" and "Interview Kickstart" as a software development engineer. Currently I'm working with "Physics Wallah" 🦄 where I'm owning the complete backend service in "Team Rancho".`,
-];
+import { homePageText as texts } from "@/data";
+import { Utils } from "@/common/utils";
 
 export default function Home() {
   const router = useRouter();
@@ -18,7 +15,6 @@ export default function Home() {
 
   const mouseEnter = () => {
     setStartTime(Date.now());
-    // clearTimeout(timer.current);
     tinkerer.current.style.transform = "rotate(-90deg)";
   };
 
@@ -45,56 +41,8 @@ export default function Home() {
     };
   }, [tinkerer.current]);
 
-  let charIndex = 0, final = 0, timeout = 1000;
-
-  function highlight(keywords) {
-    setTextElement((text) => {
-      let formattedText = text;
-      for (const word of keywords) {
-        if (text.includes(word)) {
-          const idx = formattedText.indexOf(word);
-          formattedText = formattedText.substring(0, idx) +
-            `<strong>${formattedText.substring(idx, idx + word.length)}</strong>` +
-            formattedText.substring(idx + word.length);
-        }
-      }
-      return formattedText;
-    })
-  }
-
-  function typeText(textToType, callback) {
-    if (charIndex < textToType.length) {
-      setTextElement((textElement) => {
-        let c = charIndex;
-        charIndex++;
-        return textElement + textToType[c];
-      });
-      setTimeout(() => {
-        typeText(textToType, callback);
-      }, 30);
-    } else {
-      setTimeout(() => {
-        if (!final) {
-          setTextElement((text) => text + "<br /><br />");
-          charIndex = 0;
-          final = 1;
-          timeout = 0;
-          typeText(texts[1], callback);
-        } else {
-          // Call the callback function when typing is complete
-          if (typeof callback === "function") {
-            callback();
-          }
-        }
-      }, timeout);
-    }
-  }
-
   useEffect(() => {
-    typeText(texts[0], () => {
-      const keywords = ["Cisco", "Interview Kickstart", "Physics Wallah", "Team Rancho"];
-      highlight(keywords);
-    });
+    Utils.typeWriter(texts, setTextElement);
   }, []);
 
   return (
