@@ -4,7 +4,7 @@
 
 body {  
     font-size: 20px;
-    /* font:inherit; */
+    background-color: #FFF;
 }
 
 html { 
@@ -15,15 +15,10 @@ html {
     vertical-align: baseline;
 }
 
-body { 
-    background-color: #FFF;
-}
-
 div { 
     margin: 0; 
     padding: 0; 
-    border: 0; 
-    /* font-size: 100%;  */
+    border: 0;
     font: inherit; 
     vertical-align: baseline;
 } 
@@ -42,47 +37,37 @@ span {
     /* font-size: 100%;  */
     font: inherit; 
     vertical-align: baseline;
+}
+
+span.index-date { 
+    color: grey; 
+    padding-right: 0.5em;
 } 
 
 p { 
     margin: 0; 
     padding: 0; 
-    border: 0; 
-    /* font-size: 100%;  */
+    border: 0;
     font: inherit; 
     vertical-align: baseline;
-} 
-
-p { 
     font-family: 'Inter';
     font-style: normal; 
     font-weight: 400;
-} 
-
-p { 
     color: #000;
-} 
-
-p { 
-    line-height: 1.5em; 
-    /* font-size: 1.1em;  */
+    line-height: 1.5em;
     margin-bottom: 1em;
-} 
+}
 
 ul { 
     margin: 0; 
     padding: 0; 
-    border: 0; 
-    /* font-size: 100%;  */
+    border: 0;
     font: inherit; 
     vertical-align: baseline;
-} 
-
-ul { 
     margin-bottom: 1em; 
     padding-left: 1.4em; 
     list-style-type: square;
-} 
+}
 
 ul.index { 
     margin-top: 2em; 
@@ -93,17 +78,13 @@ ul.index {
 b { 
     margin: 0; 
     padding: 0; 
-    border: 0; 
-    /* font-size: 100%;  */
+    border: 0;
     font: inherit; 
     vertical-align: baseline;
-} 
-
-b { 
     font-family: 'Noto Serif', serif; 
     font-style: normal; 
     font-weight: 700;
-} 
+}
 
 a { 
     margin: 0; 
@@ -112,43 +93,28 @@ a {
     font-size: 100%; 
     font: inherit; 
     vertical-align: baseline;
-} 
-
-a { 
     color: #0c0c0c;
     text-decoration: underline;
-} 
+}
 
 li { 
     margin: 0; 
     padding: 0; 
-    border: 0; 
-    /* font-size: 100%;  */
+    border: 0;
     font: inherit; 
     vertical-align: baseline;
-} 
-
-li { 
     font-family: 'Noto Serif', serif; 
     font-style: normal; 
     font-weight: 400;
-} 
-
-li { 
     color: #0c0c0c;
-} 
-
-li { 
-    line-height: 1.5em; 
-    /* font-size: 1.1em;  */
+    line-height: 1.5em;
     list-style-position: outside; 
     margin-bottom: 1em;
-} 
+}
 
-span.index-date { 
-    color: grey; 
-    padding-right: 0.5em;
-} 
+li.point {
+    color: grey;
+}
 
 u {
     font-family: 'Roboto';
@@ -158,74 +124,35 @@ u {
 img { 
     margin: 0; 
     padding: 0; 
-    border: 0; 
-    /* font-size: 100%;  */
+    border: 0;
     font: inherit; 
     vertical-align: baseline;
-} 
-
-img { 
     margin-bottom: 1em; 
     width: 100%;
-} 
+}
 
 h2 { 
     margin: 0; 
     padding: 0; 
-    border: 0; 
-    /* font-size: 100%;  */
+    border: 0;
     font: inherit; 
     vertical-align: baseline;
-} 
-
-h2 { 
     font-family: 'Noto Serif', serif; 
     font-style: normal; 
     font-weight: 700;
-} 
-
-h2 { 
     color: #0c0c0c;
-} 
-
-h2 { 
     line-height: 1.5em; 
-    /* font-size: 1.1em;  */
     margin-top: 1.5em; 
     margin-bottom: 0.5em;
-} 
-
-
-
-@media screen and (max-width: 800px) {
-    body {
-        /* font-size: 14px; */
-        margin-top: 60px;
-        padding-left: 31px;
-        padding-right: 31px;
-
-    }
 }
-
-@media only screen and (min-width: 800px){ 
-    div#content { 
-      width: 38em;
-    } 
-  }
 
 .dateless {
     font-family: 'Inter';
     margin-top: 3rem;
     margin-bottom: 1em;
-    /* font-size: 1.5rem; */
 }
 
 header a {
-    color: grey;
-}
-
-li.point {
-    /* font-size: 15px; */
     color: grey;
 }
 
@@ -245,15 +172,6 @@ li.point {
 .cursor {
     display: inline-block;
     animation: blink 0.7s infinite;
-}
-
-@keyframes blink {
-    0%, 100% {
-        opacity: 0;
-    }
-    50% {
-        opacity: 1;
-    }
 }
 
 .sub-list {
@@ -305,5 +223,30 @@ li.point {
         display: flex;
         flex-direction: column;
         justify-content: space-between;
+    }
+}
+
+@keyframes blink {
+    0%, 100% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 1;
+    }
+}
+
+@media only screen and (min-width: 800px){ 
+    div#content { 
+        width: 38em;
+    } 
+}
+
+@media screen and (max-width: 800px) {
+    body {
+        /* font-size: 14px; */
+        margin-top: 60px;
+        padding-left: 31px;
+        padding-right: 31px;
+
     }
 }

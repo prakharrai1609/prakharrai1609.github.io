@@ -11,7 +11,6 @@ export default function Home() {
   const [startTime, setStartTime] = useState(0);
   const tinkerer = useRef();
   const timer = useRef();
-  const [textElement, setTextElement] = useState("");
 
   const mouseEnter = () => {
     setStartTime(Date.now());
