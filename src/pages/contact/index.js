@@ -2,9 +2,13 @@ import Image from 'next/image'
 import React from 'react'
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowLeftLong } from "@fortawesome/free-solid-svg-icons";
+import Head from 'next/head';
 
 const Contact = () => {
   return <div id="content">
+    <Head>
+      <title>Contact | Prakhar Rai</title>
+    </Head>
     {/* <header>
       <p className="name-header"><a href="/">← Prakhar Rai</a></p>
     </header> */}

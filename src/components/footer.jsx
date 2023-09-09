@@ -3,7 +3,7 @@ import React from "react";
 const Footer = () => {
   return (
     <footer
-      style={{ boxShadow: "rgba(0, 0, 0, 0.35) 0px 0px 2px;" }}
+      style={{ boxShadow: "rgba(0, 0, 0, 0.35) 0px 0px 2px" }}
       id="footer"
     >
       <div className="credits">&#9400; Prakhar Rai, 2023</div>

@@ -4,7 +4,7 @@ export const experience = [
     companyName: "SWE @ Physics Wallah",
     list: [
       `I'm working on the <b>end-to-end</b> backend service of nugget-o-verse where we are building a holistic and personlised learning experience for a student to cater the entire learning cycle.`,
-      `Developed and deployed the service, focusing on optimisation for a large user base exceeding <b>10 million users.</b>`
+      `Developed and deployed the service, focusing on optimisation for a large user base exceeding <b>10 million+ users.</b>`
     ]
   },
   {
