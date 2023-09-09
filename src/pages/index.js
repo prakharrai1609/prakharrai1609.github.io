@@ -3,8 +3,8 @@ import { useRouter } from "next/router";
 import { useEffect, useRef, useState } from "react";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faAddressBook, faUser, faBookJournalWhills } from '@fortawesome/free-solid-svg-icons'
+import TypeWriter from "@/components/typewriter";
 import { homePageText as texts } from "@/data";
-import { Utils } from "@/common/utils";
 
 export default function Home() {
   const router = useRouter();
@@ -41,10 +41,6 @@ export default function Home() {
     };
   }, [tinkerer.current]);
 
-  useEffect(() => {
-    Utils.typeWriter(texts, setTextElement);
-  }, []);
-
   return (
     <>
       <Head>
@@ -69,10 +65,7 @@ export default function Home() {
             <span style={{ color: "#000" }}>.</span>
           </span>
         </p>
-        <p id="text">
-          <span dangerouslySetInnerHTML={{ __html: textElement }} />
-          <span className="cursor">|</span>
-        </p>
+        <TypeWriter texts={texts} />
         <ul className="index">
           <li
             onClick={() => {
