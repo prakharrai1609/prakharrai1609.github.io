@@ -48,10 +48,12 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
       </Head>
       <div id="content" >
-        <p style={{ fontSize: "35px" }}>
-          This is the site of{" "}
-          <span style={{ fontWeight: 600 }}>Prakhar Rai</span>, developer,
-          engineer &{" "}
+        <p style={{ fontSize: "30px" }}>
+          <span style={{ fontSize: "40px", fontWeight: 700 }}>Hey, I am Prakhar Rai</span>
+          <br />
+          <span style={{ display: "block", marginTop: "10px" }}></span>
+          Engineer,
+          educator & {" "}
           <span
             ref={tinkerer}
             className="tinkerer"
