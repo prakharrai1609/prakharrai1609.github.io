@@ -218,17 +218,20 @@ main {
     border-radius: 50%;
     overflow: hidden;
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    transition: transform 0.2s;
+}
+
+.about-image:hover {
+    transform: scale(1.1);
 }
 
 /* Footer Styles */
 footer {
-    /* width: 80%; */
-    align-items: center;
+    margin-top: 2rem;
+    padding: 1rem 3rem 1rem 3rem;
     display: flex;
     flex-direction: row;
-    justify-content: center;
-    text-align: center;
-    padding: 1rem;
+    justify-content: space-between;
 }
 
 .cool-footer {
@@ -257,6 +260,10 @@ footer {
     /* margin: 10px; */
 }
 
+.footerSocials {
+    display: flex;
+    align-items: center;
+}
 .social-links img {
     width: 30px;
     height: 30px;

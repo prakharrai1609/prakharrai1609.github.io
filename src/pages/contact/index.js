@@ -17,7 +17,13 @@ const Contact = () => {
     </a>
     <div id="twoColumns">
       <div>
-        <h1 className="dateless">Contact</h1>
+        <h2
+          className="dateless"
+          style={{ fontSize: "35px" }}
+        >
+          Contact
+        </h2>
+        <span style={{ marginBottom: "2rem", height: "0.5px", width: "100%", backgroundColor: "#828282", display: "block" }}></span>
 
         <p>I'm happy to hear from you:</p>
 

@@ -7,7 +7,7 @@ const Blogs = () => {
   return (
     <div id="content">
       <Head>
-        <title>Blogs | Prakhar Rai</title>
+        <title>Projects | Prakhar Rai</title>
       </Head>
       <a href="/">
         <FontAwesomeIcon icon={faArrowLeftLong} />
@@ -16,7 +16,7 @@ const Blogs = () => {
         className="dateless"
         style={{ fontSize: "35px" }}
       >
-        Blogs
+        Projects
       </h2>
       <span style={{ marginBottom: "2rem", height: "0.5px", width: "40%", backgroundColor: "#828282", display: "block" }}></span>
 

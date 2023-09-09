@@ -17,12 +17,12 @@ const About = () => {
       <div className="about-image">
         <Image layout="fill" src="/prakhar.png" alt="bhai ke image" />
       </div>
-      <h1
+      <h2
         className="dateless"
         style={{ fontSize: "35px" }}
       >
         About me
-      </h1>
+      </h2>
       <span style={{ marginBottom: "2rem", height: "0.5px", width: "40%", backgroundColor: "#828282", display: "block" }}></span>
 
       <p>

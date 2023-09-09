@@ -2,7 +2,7 @@ import Head from "next/head";
 import { useRouter } from "next/router";
 import { useEffect, useRef, useState } from "react";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faAddressBook, faUser, faBookJournalWhills } from '@fortawesome/free-solid-svg-icons'
+import { faAddressBook, faUser, faBookJournalWhills, faTools } from '@fortawesome/free-solid-svg-icons'
 import TypeWriter from "@/components/typewriter";
 import { homePageText as texts } from "@/data";
 
@@ -77,6 +77,16 @@ export default function Home() {
               <FontAwesomeIcon icon={faBookJournalWhills} />
             </span>
             <u>Blogs</u>
+          </li>
+          <li
+            onClick={() => {
+              router.push("/projects");
+            }}
+          >
+            <span className="index-date">
+              <FontAwesomeIcon icon={faTools} />
+            </span>
+            <u>Projects</u>
           </li>
           <li
             onClick={() => {
