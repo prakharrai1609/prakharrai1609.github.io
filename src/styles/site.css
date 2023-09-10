@@ -278,6 +278,62 @@ footer {
 
 /* Footer Styles End */
 
+/* Navbar styles start */
+
+nav {
+    margin-top: 1rem;
+}
+
+.navbar .nav-item a {
+    color: #333;
+    text-decoration: none;
+    position: relative;
+    font-family: 'Roboto', 'Noto Serif', serif;
+}
+
+.navbar .nav-item a::before,
+.navbar .nav-item a::after {
+    content: "";
+    position: absolute;
+    height: 1.5px;
+    width: 0;
+    background-color: black;
+    bottom: -3px;
+    transition: width 0.3s;
+}
+
+.navbar .nav-item a:hover {
+    color: #4000f1;
+}
+
+.navbar .nav-item a::before {
+    left: 0;
+}
+
+.navbar .nav-item a::after {
+    right: 0;
+}
+
+.navbar .nav-item a:hover::before,
+.navbar .nav-item a:hover::after {
+    width: 100%;
+}
+
+.nav-item {
+    margin: 0 0.5rem 0;
+}
+
+/* Navbar styles end */
+
+@media screen and (min-width: 992px) {
+    #navbarNav {
+        display: flex;
+        flex-direction: row;
+        justify-content: end;
+    }
+}
+
+
 @media screen and (min-width: 700px) {
     #twoColumns {
         display: flex;
@@ -316,5 +372,10 @@ footer {
         padding-left: 31px;
         padding-right: 31px;
 
+    }
+
+    footer {
+        padding-left: 0;
+        padding-right: 0;
     }
 }

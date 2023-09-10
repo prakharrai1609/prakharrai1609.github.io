@@ -67,7 +67,7 @@ export default function Home() {
           </span>
         </p>
         <TypeWriter texts={texts} />
-        <ul className="index">
+        {/* <ul className="index">
           <li
             onClick={() => {
               router.push("/blogs");
@@ -108,7 +108,7 @@ export default function Home() {
             </span>
             <u>Contact</u>
           </li>
-        </ul>
+        </ul> */}
       </div>
     </>
   );

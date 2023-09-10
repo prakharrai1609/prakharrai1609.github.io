@@ -25,10 +25,7 @@ const Footer = () => {
           </a>
         </span>
         <span className="footerSocials">
-          <a
-            href="https://github.com/prakharrai1609/graph-visualizer/tree/main"
-            target="_blank"
-          >
+          <a href="https://github.com/prakharrai1609/" target="_blank">
             <image
               src="https://cdn4.iconfinder.com/data/icons/iconsimple-logotypes/512/github-512.png"
               alt="GitHub"
