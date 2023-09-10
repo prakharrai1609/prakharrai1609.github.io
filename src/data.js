@@ -41,3 +41,22 @@ export const homePageText = [
   `I've previously worked with "Cisco" and "Interview Kickstart". Currently I'm working with "Physics Wallah" where I'm working on "Nugget-o-verse" to create a personalized & well structured learning experience for students.`,
   // "I've completed my B.Tech in Computer Science Engineering in 2023.",
 ];
+
+export const blogs = [
+  {
+    "heading": "This is heading 1",
+    "blogList": [
+      {
+        "title": "Advanced algorithms"
+      }
+    ]
+  },
+  {
+    "heading": "This is heading 2",
+    "blogList": [
+      {
+        "title": "Advanced data structures"
+      }
+    ]
+  }
+]
