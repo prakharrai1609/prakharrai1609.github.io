@@ -2,7 +2,10 @@ import React from "react";
 
 const SocialsButtons = () => {
   return (
-    <div style={{ display: "flex", flexDirection: "row" }} class="social-links">
+    <div
+      style={{ display: "flex", flexDirection: "row" }}
+      className="social-links"
+    >
       <span className="footerSocials">
         <button
           style={{

@@ -1,16 +1,15 @@
 import React from "react";
 import { blogs } from "@/data";
-import { Utils } from "@/common/utils";
 
 const ListBlogs = () => {
   return (
     <div className="container">
       <div className="row">
-        {blogs.map((blogObj) => (
-          <div className="col-md-6 col-12">
+        {blogs.map((blogObj, index) => (
+          <div className="col-md-6 col-12" key={index}>
             <h2>{blogObj.heading}</h2>
             {blogObj.blogList.map((blog) => (
-              <a href={"blogs/" + Utils.getSlug(blog.title)} key={blog.title}>
+              <a href={"blogs/" + blog.slug} key={blog.title}>
                 {blog.title}
               </a>
             ))}
