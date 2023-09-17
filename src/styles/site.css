@@ -381,3 +381,108 @@ nav {
         box-shadow: rgba(0, 0, 0, 0.35) 0px 0px 0px;
     }
 }
+
+/* ProjectCard.css */
+
+.project-card {
+    display: flex;
+    border: 1px solid #e0e0e0;
+    margin: 1rem;
+    padding: 1rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .project-image {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+  }
+  
+  .project-image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+  }
+  
+  .project-details {
+    flex: 2;
+    padding: 0 16px;
+  }
+  
+  .project-title {
+    font-size: 1.5rem;
+    font-family: 'Inter', 'Noto Serif', serif; 
+    margin-bottom: 8px;
+    color: #333;
+  }
+  
+  .project-description {
+    margin-bottom: 12px;
+    font-size: medium;
+    color: #666;
+  }
+  
+  .project-tech {
+    color: #888;
+    margin-bottom: 1rem;
+    font-size: 1rem;
+  }
+  
+  .project-github-link {
+    text-decoration: none;
+    margin: 0 2px;
+    color: black;
+    display: inline-block;
+    padding: 8px 16px;
+    background-color: white;
+    border: 1px solid #d0d0d0;
+    border-radius: 4px;
+    transition: background-color 0.2s ease-in-out;
+  }
+
+  .project-video-link {
+    text-decoration: none;
+    margin: 0 2px;
+    color: white;
+    display: inline-block;
+    padding: 8px 16px;
+    background-color: rgb(255, 0, 0);
+    border: 1px solid #d0d0d0;
+    border-radius: 4px;
+    transition: background-color 0.2s ease-in-out;
+  }
+
+  .project-video-link:hover {
+    background-color: #000;
+    color: #fff;
+    border: 1px solid #000000;
+  }
+  
+  .project-github-link:hover {
+    background-color: #007bff;
+    color: #fff;
+    border: 1px solid #007bff;
+  }
+  
+  .circle {
+    width: 50px;
+    height: 50px;
+    /* background-color: #f0f0f0; */
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+    transition: transform 0.2s;
+  }
+  
+  .circle img {
+    border-radius: 50%;
+  }
+  
+  .circle:hover {
+    transform: scale(1.1);
+  }

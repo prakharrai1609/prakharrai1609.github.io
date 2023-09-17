@@ -44,107 +44,99 @@ export const homePageText = [
 
 export const blogs = [
   {
-    "heading": "Database Engineering",
+    "heading": "Web Development",
     "blogList": [
       {
-        "title": "Demystifying Database Indexing with Go",
-        "slug": "demystifying-database-indexing-with-go"
+        "title": "The magic of JWT tokens!",
+        "outside": "https://www.linkedin.com/posts/prakharrai1609_how-does-a-web-app-know-you-are-authorized-activity-7107700975913566208-bAUz?utm_source=share&utm_medium=member_desktop",
       }
     ]
   },
   {
-    "heading": "This is heading 2",
+    "heading": "Operating Systems",
     "blogList": [
       {
-        "title": "Advanced data structures"
+        "outside": "https://www.linkedin.com/posts/prakharrai1609_softwareengineering-engineering-connections-activity-7106517166543241216-Cw-j?utm_source=share&utm_medium=member_desktop",
+        "title": "Why is concurrency easier within a server?"
+      },
+      {
+        "title": "What the heck are SEMAPHORES!",
+        "outside": "https://www.linkedin.com/posts/prakharrai1609_what-are-semaphores-and-how-are-they-actually-activity-7104707593872273408-TnPn?utm_source=share&utm_medium=member_desktop"
+      },
+      {
+        title: "`SO_REUSEADDR`? What the heck!",
+        outside: "https://www.linkedin.com/posts/prakharrai1609_when-a-tcp-connection-is-closed-the-operating-activity-7098244982175625216-_rDL?utm_source=share&utm_medium=member_desktop"
+      }
+    ]
+  },
+  {
+    heading: "Language Internals",
+    blogList: [
+      {
+        outside: "https://www.linkedin.com/posts/prakharrai1609_recently-ive-been-exploring-golang-while-activity-7098939000127696897-NibY?utm_source=share&utm_medium=member_desktop",
+        title: "Go-routies????"
       }
     ]
   }
 ]
 
-export const blogList = [
-  `
-  <h1 id="demystifying-database-indexing-with-go">Demystifying Database Indexing with Go</h1>
-<p>Databases are the backbone of modern applications, and optimizing their performance is a critical aspect of software development. One of the key tools in this optimization toolkit is indexing. In this blog post, we&#39;ll explore what indexes are, why they are important, and how to implement basic indexing in a Go application.</p>
-<h2 id="understanding-indexes">Understanding Indexes</h2>
-<p>Imagine a library with thousands of books. Finding a specific book would be a nightmare if the books were randomly scattered on shelves with no order. To make it efficient, librarians use a catalog, which is essentially an index of the books, organized by title, author, subject, and so on. This catalog guides readers to the exact location of a book, significantly speeding up the search process.</p>
-<p>In the database world, an index serves a similar purpose. It&#39;s a data structure that helps the database management system (DBMS) quickly locate and retrieve specific rows from a table. Without indexes, the DBMS would need to scan the entire table to find the desired data, which is highly inefficient, especially with large datasets.</p>
-<h2 id="why-are-indexes-important-">Why Are Indexes Important?</h2>
-<p>Indexes are crucial for several reasons:</p>
-<ol>
-<li><p><strong>Faster Data Retrieval</strong>: With indexes, you can retrieve data much faster, even from tables containing millions of records.</p>
-</li>
-<li><p><strong>Reduced I/O Operations</strong>: Indexes reduce the number of I/O operations, as the DBMS doesn&#39;t have to scan the entire table. This results in better performance and lower resource consumption.</p>
-</li>
-<li><p><strong>Enforced Uniqueness</strong>: Indexes can enforce the uniqueness of values in one or more columns, ensuring data integrity.</p>
-</li>
-<li><p><strong>Optimized Sorting</strong>: Indexes can accelerate sorting operations, such as ORDER BY clauses in SQL queries.</p>
-</li>
-</ol>
-<h2 id="basic-indexing-in-go">Basic Indexing in Go</h2>
-<p>Now, let&#39;s dive into implementing basic indexing in a Go application using the popular database library, <a href="https://gorm.io/">GORM</a>.</p>
-<h3 id="setting-up-the-environment">Setting Up the Environment</h3>
-<p>Before we start coding, make sure you have Go and GORM installed. You can install GORM using the following command:</p>
-<pre><code class="lang-bash"><span class="hljs-built_in">go</span> <span class="hljs-built_in">get</span> -u gorm.io/gorm
-</code></pre>
-<p>Next, we&#39;ll create a simple SQLite database for our example. Create a file named <code>main.go</code> and add the following code:</p>
-<pre><code class="lang-go">package main
-
-import (
-    <span class="hljs-string">"gorm.io/driver/sqlite"</span>
-    <span class="hljs-string">"gorm.io/gorm"</span>
-    <span class="hljs-string">"log"</span>
-)
-
-<span class="hljs-keyword">type</span> Product struct {
-    ID    uint
-    Code  <span class="hljs-built_in">string</span>
-    Price uint
-}
-
-func main() {
-    <span class="hljs-comment">// Connect to the SQLite database</span>
-    <span class="hljs-keyword">db</span>, <span class="hljs-keyword">err</span> := gorm.<span class="hljs-keyword">Open</span>(sqlite.<span class="hljs-keyword">Open</span>(<span class="hljs-string">"test.db"</span>), &amp;gorm.Config{})
-    <span class="hljs-keyword">if</span> <span class="hljs-keyword">err</span> != nil {
-        <span class="hljs-keyword">log</span>.Fatal(<span class="hljs-string">"Failed to connect to database:"</span>, <span class="hljs-keyword">err</span>)
-    }
-    defer <span class="hljs-keyword">db</span>.<span class="hljs-keyword">Close</span>()
-
-    <span class="hljs-comment">// AutoMigrate creates the "products" table and applies migrations</span>
-    <span class="hljs-keyword">db</span>.AutoMigrate(&amp;Product{})
-
-    <span class="hljs-comment">// Create records</span>
-    <span class="hljs-keyword">db</span>.Create(&amp;Product{Code: <span class="hljs-string">"A123"</span>, Price: 1000})
-    <span class="hljs-keyword">db</span>.Create(&amp;Product{Code: <span class="hljs-string">"B456"</span>, Price: 2000})
-    <span class="hljs-keyword">db</span>.Create(&amp;Product{Code: <span class="hljs-string">"C789"</span>, Price: 3000})
-
-    <span class="hljs-comment">// Create an index on the "code" column</span>
-    <span class="hljs-keyword">db</span>.Exec(<span class="hljs-string">"CREATE INDEX idx_code ON products(code)"</span>)
-
-    <span class="hljs-comment">// Retrieve data using the index</span>
-    <span class="hljs-keyword">var</span> product Product
-    <span class="hljs-keyword">db</span>.First(&amp;product, <span class="hljs-string">"code = ?"</span>, <span class="hljs-string">"A123"</span>)
-    <span class="hljs-keyword">log</span>.Printf(<span class="hljs-string">"Product found: %+v\n"</span>, product)
-}
-</code></pre>
-<p>In this code:</p>
-<ul>
-<li>We define a <code>Product</code> struct to represent our data model.</li>
-<li>We set up a SQLite database connection using GORM.</li>
-<li>We use <code>db.AutoMigrate</code> to create the &quot;products&quot; table.</li>
-<li>We create some sample records.</li>
-<li>We create an index on the &quot;code&quot; column using the <code>db.Exec</code> method.</li>
-<li>Finally, we retrieve a record using the index.</li>
-</ul>
-<h3 id="running-the-code">Running the Code</h3>
-<p>To run the code, execute the following command in your terminal:</p>
-<pre><code class="lang-bash">go <span class="hljs-keyword">run</span><span class="bash"> main.go</span>
-</code></pre>
-<p>You should see the following output:</p>
-<pre><code><span class="hljs-selector-tag">Product</span> <span class="hljs-selector-tag">found</span>: {<span class="hljs-attribute">ID</span>:<span class="hljs-number">1</span> Code:A123 Price:<span class="hljs-number">1000</span>}
-</code></pre><p>Congratulations! You&#39;ve successfully implemented basic indexing in a Go application.</p>
-<h2 id="conclusion">Conclusion</h2>
-<p>Indexes are essential tools for optimizing database performance. In this blog post, we&#39;ve explored what indexes are, why they are important, and how to implement basic indexing in a Go application using GORM. By utilizing indexes wisely, you can significantly improve the efficiency and speed of your database queries, making your applications more responsive and scalable.</p>
-
-  `
-];
+export const projects = [
+  {
+    title: "Hands on GO",
+    description: "I'm working on a hands on `go` programming learning tutorial, its a lightweight project aiming at helping beginners learn and start implementing `go` in <b>5 minutes!</b>",
+    tech: [
+      "https://assets.stickpng.com/images/584830f5cef1014c0b5e4aa1.png",
+      "https://miro.medium.com/v2/resize:fit:1200/1*yUNfohs9jA6GCDmyCYJTvA@2x.png",
+    ],
+    github: "https://github.com/prakharrai1609/go-hands-on-tutorial",
+    image: "https://miro.medium.com/v2/resize:fit:500/1*vmFSpk9xtpxAHkH7cmt-3Q.png",
+    liveLink: "https://prakharrai1609.github.io/go-hands-on-tutorial/"
+  },
+  {
+    title: "GraphViz",
+    description: "GraphViz is an interactive tool for visualizing graph algorithms, providing real-time visualization, interactivity, various algorithms, performance insights, and educational value.",
+    tech: [
+      "https://assets.stickpng.com/images/584830f5cef1014c0b5e4aa1.png",
+      "https://miro.medium.com/v2/resize:fit:1200/1*yUNfohs9jA6GCDmyCYJTvA@2x.png",
+    ],
+    github: "https://github.com/prakharrai1609/graph-visualizer",
+    video: "",
+    liveLink: "https://prakharrai1609.github.io/graph-visualizer/",
+    image: "https://github.com/prakharrai1609/go-editor/assets/58136319/3bf918ab-dcdd-475f-b16f-e80adfb539f5"
+  },
+  {
+    title: "TCP Echo Server",
+    description: "A multithreadded TCP echo server which is used for network testing and debugging. It receives data from clients and promptly sends it back, ensuring communication reliability and troubleshooting capabilities in various applications.",
+    tech: [
+      "https://www.edureka.co/blog/wp-content/uploads/2018/09/Golang-Logo-Golang-Tutorial-Edureka.jpg",
+    ],
+    github: "https://github.com/prakharrai1609/gkredis/tree/stable",
+    video: "",
+    image: "https://github.com/prakharrai1609/gkredis/assets/58136319/fbf3a197-a008-4fd6-b873-027abe2c536b"
+  },
+  {
+    title: "Keeper App",
+    description: "Keeper App is a versatile note-taking app that enables users to capture & organize, notes & tasks promoting efficient productivity and information management.",
+    tech: [
+      "https://images.ctfassets.net/mrop88jh71hl/55rrbZfwMaURHZKAUc5oOW/9e5fe805eb03135b82e962e92169ce6d/python-programming-language.png?w=750&h=750&q=100&fm=png",
+      "https://assets.stickpng.com/images/584830f5cef1014c0b5e4aa1.png",
+      "https://ih1.redbubble.net/image.468284144.2756/st,small,845x845-pad,1000x1000,f8f8f8.jpg"
+    ],
+    github: "https://github.com/prakharrai1609/Keeper-App",
+    video: "https://drive.google.com/file/d/1F2uT6_iRf6lBQBKRM2LUxtxfnqd7_8US/view?usp=share_link",
+    liveLink: "https://prakharrai1609.github.io/graph-visualizer/",
+    image: "https://play-lh.googleusercontent.com/9bJoeaPbGTB8Tz_h4N-p-6ReRd8vSS-frZb2tmJulaGIoTKElKj3zpmcFJvnS96ANZP5"
+  },
+  {
+    title: "Chessify",
+    description: "A 2 player chess game <em>(In-progress)</em>.",
+    tech: [
+      "https://cdn.pixabay.com/photo/2017/08/05/11/16/logo-2582748_640.png",
+      "https://cdn.pixabay.com/photo/2017/08/05/11/16/logo-2582747_1280.png",
+      "https://miro.medium.com/v2/resize:fit:1200/1*yUNfohs9jA6GCDmyCYJTvA@2x.png",
+    ],
+    github: "https://github.com/prakharrai1609/chess",
+    liveLink: "https://prakharrai1609.github.io/chess/",
+    image: "https://github.com/prakharrai1609/chess/assets/58136319/4bc3e287-ec97-4238-bf89-308643d65dd7"
+  }
+]
