@@ -24,7 +24,9 @@ const Blogs = () => {
         </h2>
         <span style={{ marginBottom: "2rem", height: "0.5px", width: "40%", backgroundColor: "#828282", display: "block" }}></span>
       </div>
-      <ListBlogs />
+      <div style={{margin:"0 10%"}}>
+        <ListBlogs />
+      </div>
     </>
   )
 }
