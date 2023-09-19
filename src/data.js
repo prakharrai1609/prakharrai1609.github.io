@@ -85,7 +85,7 @@ export const projects = [
     title: "Hands on GO",
     description: "I'm working on a hands on `go` programming learning tutorial, its a lightweight project aiming at helping beginners learn and start implementing `go` in <b>5 minutes!</b>",
     tech: [
-      "https://assets.stickpng.com/images/584830f5cef1014c0b5e4aa1.png",
+      "/react.png",
       "https://miro.medium.com/v2/resize:fit:1200/1*yUNfohs9jA6GCDmyCYJTvA@2x.png",
     ],
     github: "https://github.com/prakharrai1609/go-hands-on-tutorial",
@@ -96,7 +96,7 @@ export const projects = [
     title: "GraphViz",
     description: "GraphViz is an interactive tool for visualizing graph algorithms, providing real-time visualization, interactivity, various algorithms, performance insights, and educational value.",
     tech: [
-      "https://assets.stickpng.com/images/584830f5cef1014c0b5e4aa1.png",
+      "/react.png",
       "https://miro.medium.com/v2/resize:fit:1200/1*yUNfohs9jA6GCDmyCYJTvA@2x.png",
     ],
     github: "https://github.com/prakharrai1609/graph-visualizer",
@@ -119,7 +119,7 @@ export const projects = [
     description: "Keeper App is a versatile note-taking app that enables users to capture & organize, notes & tasks promoting efficient productivity and information management.",
     tech: [
       "https://images.ctfassets.net/mrop88jh71hl/55rrbZfwMaURHZKAUc5oOW/9e5fe805eb03135b82e962e92169ce6d/python-programming-language.png?w=750&h=750&q=100&fm=png",
-      "https://assets.stickpng.com/images/584830f5cef1014c0b5e4aa1.png",
+      "react.png",
       "https://ih1.redbubble.net/image.468284144.2756/st,small,845x845-pad,1000x1000,f8f8f8.jpg"
     ],
     github: "https://github.com/prakharrai1609/Keeper-App",
