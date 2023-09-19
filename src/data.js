@@ -124,7 +124,6 @@ export const projects = [
     ],
     github: "https://github.com/prakharrai1609/Keeper-App",
     video: "https://drive.google.com/file/d/1F2uT6_iRf6lBQBKRM2LUxtxfnqd7_8US/view?usp=share_link",
-    liveLink: "https://prakharrai1609.github.io/graph-visualizer/",
     image: "https://play-lh.googleusercontent.com/9bJoeaPbGTB8Tz_h4N-p-6ReRd8vSS-frZb2tmJulaGIoTKElKj3zpmcFJvnS96ANZP5"
   },
   {
