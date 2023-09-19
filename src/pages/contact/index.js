@@ -1,8 +1,10 @@
 import Image from 'next/image'
 import React from 'react'
 import Head from 'next/head';
+import { useRouter } from 'next/router';
 
 const Contact = () => {
+  const router = useRouter();
   return <div id="content">
     <Head>
       <title>Contact | Prakhar Rai</title>
@@ -10,9 +12,7 @@ const Contact = () => {
     {/* <header>
       <p className="name-header"><a href="/">← Prakhar Rai</a></p>
     </header> */}
-    <a href="/">
-    <img style={{height: "2rem", width: "2rem"}} src='/leftarrow.png' />
-    </a>
+    <img className='leftArrow' onClick={() => router.back()} style={{height: "2rem", width: "2rem"}} src='/leftarrow.png' />
     <div id="twoColumns">
       <div>
         <h2

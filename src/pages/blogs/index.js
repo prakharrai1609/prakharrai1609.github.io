@@ -1,18 +1,18 @@
 import ListBlogs from '@/components/listblogs';
 import Head from 'next/head';
 import Image from 'next/image';
+import { useRouter } from 'next/router';
 import React from 'react'
 
 const Blogs = () => {
+  const router = useRouter();
   return (
     <>
       <div id="content">
         <Head>
           <title>Blogs | Prakhar Rai</title>
         </Head>
-        <a href="/">
-        <img style={{height: "2rem", width: "2rem"}} src='/leftarrow.png' />
-        </a>
+        <img className='leftArrow' onClick={() => router.back()} style={{height: "2rem", width: "2rem"}} src='/leftarrow.png' />
         <div className="about-image">
           <Image layout="fill" src="/blogs.png" alt="bhai ke image" />
         </div>

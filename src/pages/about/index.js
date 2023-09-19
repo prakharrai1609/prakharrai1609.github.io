@@ -4,16 +4,16 @@ import { faArrowUpWideShort } from "@fortawesome/free-solid-svg-icons";
 import Experience from "@/components/experience";
 import Image from "next/image";
 import Head from "next/head";
+import { useRouter } from "next/router";
 
 const About = () => {
+  const router = useRouter();
   return (
     <div id="content">
       <Head>
         <title>About | Prakhar Rai</title>
       </Head>
-      <a href="/">
-        <img style={{height: "2rem", width: "2rem"}} src='/leftarrow.png' />
-      </a>
+      <img className='leftArrow' onClick={() => router.back()} style={{height: "2rem", width: "2rem"}} src='/leftarrow.png' />
       <div className="about-image">
         <Image layout="fill" src="/prakhar.png" alt="bhai ke image" />
       </div>
