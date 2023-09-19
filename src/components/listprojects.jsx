@@ -17,7 +17,6 @@ const ProjectCard = ({
   image,
   liveLink,
 }) => {
-  console.log(liveLink);
   return (
     <div className="project-card">
       <div className="project-image">

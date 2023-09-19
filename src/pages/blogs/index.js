@@ -1,6 +1,4 @@
 import ListBlogs from '@/components/listblogs';
-import { faArrowLeftLong } from '@fortawesome/free-solid-svg-icons';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import Head from 'next/head';
 import Image from 'next/image';
 import React from 'react'
@@ -13,7 +11,7 @@ const Blogs = () => {
           <title>Blogs | Prakhar Rai</title>
         </Head>
         <a href="/">
-          <FontAwesomeIcon icon={faArrowLeftLong} />
+        <img style={{height: "2rem", width: "2rem"}} src='/leftarrow.png' />
         </a>
         <div className="about-image">
           <Image layout="fill" src="/blogs.png" alt="bhai ke image" />

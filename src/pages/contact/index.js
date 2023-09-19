@@ -1,7 +1,5 @@
 import Image from 'next/image'
 import React from 'react'
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faArrowLeftLong } from "@fortawesome/free-solid-svg-icons";
 import Head from 'next/head';
 
 const Contact = () => {
@@ -13,7 +11,7 @@ const Contact = () => {
       <p className="name-header"><a href="/">← Prakhar Rai</a></p>
     </header> */}
     <a href="/">
-      <FontAwesomeIcon icon={faArrowLeftLong} />
+    <img style={{height: "2rem", width: "2rem"}} src='/leftarrow.png' />
     </a>
     <div id="twoColumns">
       <div>

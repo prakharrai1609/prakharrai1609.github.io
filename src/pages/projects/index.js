@@ -1,7 +1,5 @@
 import ProjectList from '@/components/listprojects';
 import { projects } from '@/data';
-import { faArrowLeftLong } from '@fortawesome/free-solid-svg-icons';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import Head from 'next/head';
 import React from 'react'
 
@@ -13,7 +11,7 @@ const Blogs = () => {
           <title>Projects | Prakhar Rai</title>
         </Head>
         <a href="/">
-          <FontAwesomeIcon icon={faArrowLeftLong} />
+          <img style={{height: "2rem", width: "2rem"}} src='/leftarrow.png' />
         </a>
         <h2
           className="dateless"

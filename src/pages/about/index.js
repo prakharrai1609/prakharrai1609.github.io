@@ -1,6 +1,6 @@
 import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faArrowLeftLong, faArrowUpWideShort, faMale } from "@fortawesome/free-solid-svg-icons";
+import { faArrowUpWideShort } from "@fortawesome/free-solid-svg-icons";
 import Experience from "@/components/experience";
 import Image from "next/image";
 import Head from "next/head";
@@ -12,7 +12,7 @@ const About = () => {
         <title>About | Prakhar Rai</title>
       </Head>
       <a href="/">
-        <FontAwesomeIcon icon={faArrowLeftLong} />
+        <img style={{height: "2rem", width: "2rem"}} src='/leftarrow.png' />
       </a>
       <div className="about-image">
         <Image layout="fill" src="/prakhar.png" alt="bhai ke image" />
