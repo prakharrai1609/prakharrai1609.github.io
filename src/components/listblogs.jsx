@@ -25,7 +25,7 @@ const ListBlogs = () => {
                   >
                     <img
                       style={{ margin: "0 1rem 0 0", width: "2rem" }}
-                      src="/linkedin.png"
+                      src={blog.image}
                       alt="linkedin"
                     />{" "}
                     <span

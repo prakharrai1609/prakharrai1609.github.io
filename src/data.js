@@ -48,7 +48,8 @@ export const blogs = [
     "blogList": [
       {
         "title": "The magic of JWT tokens!",
-        "outside": "https://www.linkedin.com/posts/prakharrai1609_how-does-a-web-app-know-you-are-authorized-activity-7107700975913566208-bAUz?utm_source=share&utm_medium=member_desktop",
+        "outside": "https://dev.to/prakharrai1609/the-magic-of-jwt-tokens-193g",
+        image: "/devto.png"
       }
     ]
   },
@@ -56,16 +57,19 @@ export const blogs = [
     "heading": "Operating Systems",
     "blogList": [
       {
-        "outside": "https://www.linkedin.com/posts/prakharrai1609_softwareengineering-engineering-connections-activity-7106517166543241216-Cw-j?utm_source=share&utm_medium=member_desktop",
-        "title": "Why is concurrency easier within a server?"
+        outside: "https://www.linkedin.com/posts/prakharrai1609_softwareengineering-engineering-connections-activity-7106517166543241216-Cw-j?utm_source=share&utm_medium=member_desktop",
+        title: "Why is concurrency easier within a server?",
+        image: "/linkedin.png"
       },
       {
-        "title": "What the heck are SEMAPHORES!",
-        "outside": "https://www.linkedin.com/posts/prakharrai1609_what-are-semaphores-and-how-are-they-actually-activity-7104707593872273408-TnPn?utm_source=share&utm_medium=member_desktop"
+        outside: "https://www.linkedin.com/posts/prakharrai1609_what-are-semaphores-and-how-are-they-actually-activity-7104707593872273408-TnPn?utm_source=share&utm_medium=member_desktop",
+        title: "What the heck are SEMAPHORES!",
+        image: "/linkedin.png"
       },
       {
         title: "`SO_REUSEADDR`? What the heck!",
-        outside: "https://www.linkedin.com/posts/prakharrai1609_when-a-tcp-connection-is-closed-the-operating-activity-7098244982175625216-_rDL?utm_source=share&utm_medium=member_desktop"
+        outside: "https://www.linkedin.com/posts/prakharrai1609_when-a-tcp-connection-is-closed-the-operating-activity-7098244982175625216-_rDL?utm_source=share&utm_medium=member_desktop",
+        image: "/linkedin.png"
       }
     ]
   },
@@ -74,7 +78,8 @@ export const blogs = [
     blogList: [
       {
         outside: "https://www.linkedin.com/posts/prakharrai1609_recently-ive-been-exploring-golang-while-activity-7098939000127696897-NibY?utm_source=share&utm_medium=member_desktop",
-        title: "Go-routies????"
+        title: "Go-routies????",
+        image: "/linkedin.png"
       }
     ]
   }
