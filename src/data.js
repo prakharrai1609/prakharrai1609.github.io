@@ -63,11 +63,11 @@ export const blogs = [
       },
       {
         outside: "https://www.linkedin.com/posts/prakharrai1609_what-are-semaphores-and-how-are-they-actually-activity-7104707593872273408-TnPn?utm_source=share&utm_medium=member_desktop",
-        title: "What the heck are SEMAPHORES!",
+        title: "How to handle multithreadding? Semaphores!",
         image: "/linkedin.png"
       },
       {
-        title: "`SO_REUSEADDR`? What the heck!",
+        title: "Why doesn't load testing ever clogs the socket!",
         outside: "https://www.linkedin.com/posts/prakharrai1609_when-a-tcp-connection-is-closed-the-operating-activity-7098244982175625216-_rDL?utm_source=share&utm_medium=member_desktop",
         image: "/linkedin.png"
       }
@@ -78,7 +78,7 @@ export const blogs = [
     blogList: [
       {
         outside: "https://www.linkedin.com/posts/prakharrai1609_recently-ive-been-exploring-golang-while-activity-7098939000127696897-NibY?utm_source=share&utm_medium=member_desktop",
-        title: "Go-routies????",
+        title: "What's the big deal about go-routines?",
         image: "/linkedin.png"
       }
     ]
